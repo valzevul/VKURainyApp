@@ -13,6 +13,7 @@
 		82FBC6FB1DB53A5D005854BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FBC6F91DB53A5D005854BF /* Main.storyboard */; };
 		82FBC6FD1DB53A5D005854BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82FBC6FC1DB53A5D005854BF /* Assets.xcassets */; };
 		82FBC7001DB53A5D005854BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FBC6FE1DB53A5D005854BF /* LaunchScreen.storyboard */; };
+		82FBC7081DB53C75005854BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FBC7071DB53C75005854BF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		82FBC6FC1DB53A5D005854BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82FBC6FF1DB53A5D005854BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82FBC7011DB53A5D005854BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82FBC7071DB53C75005854BF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				82FBC6F51DB53A5D005854BF /* FirstViewController.swift */,
 				82FBC6F71DB53A5D005854BF /* SecondViewController.swift */,
 				82FBC6F91DB53A5D005854BF /* Main.storyboard */,
+				82FBC7071DB53C75005854BF /* Constants.swift */,
 				82FBC6FC1DB53A5D005854BF /* Assets.xcassets */,
 				82FBC6FE1DB53A5D005854BF /* LaunchScreen.storyboard */,
 				82FBC7011DB53A5D005854BF /* Info.plist */,
@@ -143,6 +146,7 @@
 				82FBC6F81DB53A5D005854BF /* SecondViewController.swift in Sources */,
 				82FBC6F41DB53A5D005854BF /* AppDelegate.swift in Sources */,
 				82FBC6F61DB53A5D005854BF /* FirstViewController.swift in Sources */,
+				82FBC7081DB53C75005854BF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
