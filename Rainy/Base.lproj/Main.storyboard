@@ -3,13 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Здесь-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Здесь" id="9pv-A4-QxB" customClass="FirstViewController" customModule="Rainy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Здесь" id="9pv-A4-QxB" customClass="CurrentWeatherViewController" customModule="Rainy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -18,31 +19,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В СПб как всегда тепло и солнечно!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASy-xO-jCK">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IhS-Ef-ZMl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="mJN-8l-gHE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdr-Jr-sJR">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vyB-kz-K2y">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="67p-CK-eqW"/>
+                                    <constraint firstAttribute="width" constant="60" id="atS-De-N4V"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlw-pI-bSv">
+                                <state key="normal" title="Reload"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-20°С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqK-8A-A6T">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="qqK-8A-A6T" firstAttribute="centerY" secondItem="vyB-kz-K2y" secondAttribute="centerY" id="FHz-Db-dQl"/>
+                            <constraint firstItem="IhS-Ef-ZMl" firstAttribute="top" secondItem="ASy-xO-jCK" secondAttribute="bottom" constant="8" id="Hsx-ax-EFc"/>
+                            <constraint firstItem="ASy-xO-jCK" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="J0e-BK-ncg"/>
+                            <constraint firstItem="tdr-Jr-sJR" firstAttribute="centerY" secondItem="vyB-kz-K2y" secondAttribute="centerY" id="LYb-Y3-Ruj"/>
+                            <constraint firstItem="vyB-kz-K2y" firstAttribute="top" secondItem="IhS-Ef-ZMl" secondAttribute="bottom" constant="8" id="NOz-eP-QFm"/>
+                            <constraint firstItem="vyB-kz-K2y" firstAttribute="leading" secondItem="tdr-Jr-sJR" secondAttribute="trailing" constant="8" id="X7g-bj-tWB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qqK-8A-A6T" secondAttribute="leading" id="adu-9i-l41"/>
+                            <constraint firstItem="vyB-kz-K2y" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="8" id="af1-Hf-6Af"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="dlw-pI-bSv" secondAttribute="bottom" constant="8" id="j2Q-Is-ssb"/>
+                            <constraint firstItem="IhS-Ef-ZMl" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="vbj-y2-AVh"/>
+                            <constraint firstItem="ASy-xO-jCK" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="voe-bZ-KVh"/>
+                            <constraint firstAttribute="trailing" secondItem="IhS-Ef-ZMl" secondAttribute="trailing" id="w8C-IY-s8T"/>
+                            <constraint firstItem="dlw-pI-bSv" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="wrn-tK-hJL"/>
+                            <constraint firstItem="ASy-xO-jCK" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="zdc-nM-4eM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Здесь" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
         <!--Дома-->
         <scene sceneID="wg7-f3-ORb">

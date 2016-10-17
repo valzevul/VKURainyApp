@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  CurrentWeatherViewController.swift
 //  Rainy
 //
 //  Created by Vadim Drobinin on 17/10/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class CurrentWeatherViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
