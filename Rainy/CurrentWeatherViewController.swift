@@ -10,16 +10,34 @@ import UIKit
 
 class CurrentWeatherViewController: UIViewController {
 
+  var currentForecast: WeatherForecast? {
+    didSet {
+      reloadUI()
+    }
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    currentForecast = updateCurrentForecast()
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
-
 }
 
+// MARK: - Update Model
+extension CurrentWeatherViewController {
+  func updateCurrentForecast() -> WeatherForecast? {
+    // ... Magic ...
+    
+  }
+}
+
+// MARK: - Update UI 
+extension CurrentWeatherViewController {
+  func reloadUI() {
+    // ... Magic ...
+  }
+}
