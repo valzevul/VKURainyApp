@@ -31,7 +31,7 @@ class CurrentWeatherViewController: UIViewController {
 extension CurrentWeatherViewController {
   func updateCurrentForecast() -> WeatherForecast? {
     // ... Magic ...
-    
+    return nil // Потому что сейчас нам ещё нечего возвращать
   }
 }
 

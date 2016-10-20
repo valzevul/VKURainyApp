@@ -15,11 +15,10 @@
 		82FBC7001DB53A5D005854BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FBC6FE1DB53A5D005854BF /* LaunchScreen.storyboard */; };
 		82FBC7081DB53C75005854BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FBC7071DB53C75005854BF /* Constants.swift */; };
 		82FBC70A1DB5408E005854BF /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FBC7091DB5408E005854BF /* WeatherForecast.swift */; };
-		9F26304FF57BF46D0D51DA08 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED4F1FC1B09CB66FAE97BE3 /* Pods.framework */; };
+		D3CD18093BE2BFD050FF717A /* Pods_Rainy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B525BB03434684BE617485 /* Pods_Rainy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07349A8992DFAA230BFDC509 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6ED4F1FC1B09CB66FAE97BE3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82FBC6F01DB53A5D005854BF /* Rainy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82FBC6F31DB53A5D005854BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +30,9 @@
 		82FBC7011DB53A5D005854BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82FBC7071DB53C75005854BF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		82FBC7091DB5408E005854BF /* WeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
-		8D72784E4C613FAFE6353C2E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B89C7E77FD0A3CACB64D1FAB /* Pods-Rainy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rainy/Pods-Rainy.release.xcconfig"; sourceTree = "<group>"; };
+		C12FEC67188564E0F21E33A5 /* Pods-Rainy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rainy/Pods-Rainy.debug.xcconfig"; sourceTree = "<group>"; };
+		E1B525BB03434684BE617485 /* Pods_Rainy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F26304FF57BF46D0D51DA08 /* Pods.framework in Frameworks */,
+				D3CD18093BE2BFD050FF717A /* Pods_Rainy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +52,8 @@
 			children = (
 				82FBC6F21DB53A5D005854BF /* Rainy */,
 				82FBC6F11DB53A5D005854BF /* Products */,
-				854A9FDEBB9AE877C0247D04 /* Pods */,
 				91C073FE5681C17EB926A332 /* Frameworks */,
+				99A7892716404A740F814892 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,21 +81,22 @@
 			path = Rainy;
 			sourceTree = "<group>";
 		};
-		854A9FDEBB9AE877C0247D04 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8D72784E4C613FAFE6353C2E /* Pods.debug.xcconfig */,
-				07349A8992DFAA230BFDC509 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		91C073FE5681C17EB926A332 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				6ED4F1FC1B09CB66FAE97BE3 /* Pods.framework */,
+				E1B525BB03434684BE617485 /* Pods_Rainy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99A7892716404A740F814892 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C12FEC67188564E0F21E33A5 /* Pods-Rainy.debug.xcconfig */,
+				B89C7E77FD0A3CACB64D1FAB /* Pods-Rainy.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,12 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82FBC7041DB53A5D005854BF /* Build configuration list for PBXNativeTarget "Rainy" */;
 			buildPhases = (
-				075B04258C32EBE73C4BDF99 /* Check Pods Manifest.lock */,
+				4D9BD13052600D0855BED523 /* [CP] Check Pods Manifest.lock */,
 				82FBC6EC1DB53A5D005854BF /* Sources */,
 				82FBC6ED1DB53A5D005854BF /* Frameworks */,
 				82FBC6EE1DB53A5D005854BF /* Resources */,
-				A27AE606B3EB4ED2EEC71936 /* Embed Pods Frameworks */,
-				9729B2726C6CC9B11F10EEA1 /* Copy Pods Resources */,
+				40506CF4418EAB886124D18D /* [CP] Embed Pods Frameworks */,
+				37E92FB366C3571715AAC0EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,49 +171,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		075B04258C32EBE73C4BDF99 /* Check Pods Manifest.lock */ = {
+		37E92FB366C3571715AAC0EF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rainy/Pods-Rainy-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9729B2726C6CC9B11F10EEA1 /* Copy Pods Resources */ = {
+		40506CF4418EAB886124D18D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rainy/Pods-Rainy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A27AE606B3EB4ED2EEC71936 /* Embed Pods Frameworks */ = {
+		4D9BD13052600D0855BED523 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -346,7 +348,7 @@
 		};
 		82FBC7051DB53A5D005854BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D72784E4C613FAFE6353C2E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C12FEC67188564E0F21E33A5 /* Pods-Rainy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X72G5VQBS8;
@@ -360,7 +362,7 @@
 		};
 		82FBC7061DB53A5D005854BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07349A8992DFAA230BFDC509 /* Pods.release.xcconfig */;
+			baseConfigurationReference = B89C7E77FD0A3CACB64D1FAB /* Pods-Rainy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X72G5VQBS8;
